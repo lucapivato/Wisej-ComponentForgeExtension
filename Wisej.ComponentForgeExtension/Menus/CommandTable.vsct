@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <Extern href="stdidcmd.h" />
+  <Extern href="vsshlids.h" />
+
+  <Commands package="guidComponentForgePackage">
+    <Groups>
+      <Group guid="guidComponentForgeCommandSet" id="ComponentForgeGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />
+      </Group>
+    </Groups>
+
+    <Buttons>
+      <Button guid="guidComponentForgeCommandSet" id="ComponentForgeCommand" priority="0x0100" type="Button">
+        <Parent guid="guidComponentForgeCommandSet" id="ComponentForgeGroup" />
+        <Strings>
+          <ButtonText>Wisej.NET Component Forge</ButtonText>
+          <CommandName>Wisej.NET Component Forge</CommandName>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <Symbols>
+    <GuidSymbol name="guidComponentForgePackage" value="{74e8ff9f-492d-46f6-a0ba-2e7177f3dbe1}" />
+    <GuidSymbol name="guidComponentForgeCommandSet" value="{5c623b93-524f-481c-9d5d-9e6d2d37e8b8}">
+      <IDSymbol name="ComponentForgeGroup" value="0x1020" />
+      <IDSymbol name="ComponentForgeCommand" value="0x0100" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
